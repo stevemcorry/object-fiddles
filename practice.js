@@ -204,7 +204,7 @@ user2.email = 'tyler.mcginnis@devmounta.in';  //Code Here
 
 //Now call the sayName method that's on the user object which will alert the users email
 
-user2.sayname();  //Code Here
+user.sayname();  //Code Here
 
 
 
@@ -216,18 +216,16 @@ user2.sayname();  //Code Here
 
 //Create an empty object called methodCollection.
 
-var methodCollection = {
-  alertHello: function(){
-    alert('hello');
-  },
-  logHello: function(){
-    console.log('hello');
-}//Code Here
-};
+var methodCollection = {};
 /*Now add two methods (functions that are properties on objects) to your methodCollection
 object. One called 'alertHello' which alerts 'hello' and another method called logHello
  which logs 'hello' to the console. */
-
+methodCollection.alertHello = function(){
+    alert('hello');
+  };
+  methodCollection.logHello = function(){
+    console.log('hello');
+};
 
 //Now call your alertHello and logHello methods.
 methodCollection.alertHello();
